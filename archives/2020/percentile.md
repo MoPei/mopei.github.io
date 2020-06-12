@@ -1,4 +1,7 @@
 # Percentile 百分位数
+
+> 转载于[杂货铺@新加坡](http://blog.liguoliang.com/2010/percentile-%e7%99%be%e5%88%86%e4%bd%8d%e6%95%b0/ "Percentile 百分位数")
+
 在日常教学应用中, 百分位数就是: 有百分之多少的人考的比你差.
 
 "Order statistics provide a way of estimating proportions of the data that should fall above and below a given value, called a percentile. The pth percentile is a value, Y(p), such that at most (100p)% of the measurements are less than this value and at most 100(1- p)% are greater. The 50th percentile is called the median."
