@@ -1,5 +1,7 @@
 # 代码工匠
 
+> 本文为自己对张建飞的《代码精进之路-从码农到工匠》的读书笔记，内容全部为书中的总结
+
 ## 命名规范：
 
 |类型|规范|
@@ -41,3 +43,11 @@
 |业务异常|B_XX_XX|B_Customer_NameAlreadyExist:客户姓名已存在|
 |系统异常|S_XX_XX|S_Unknow_Error:未知系统错误|
 
+## 设计原则
+SOLID 是由5个设计原则开头字母的缩写，其本身就由稳定的意思
+
+- SRP（Single Response Principle）单一职责原则
+- OCP（Open Close Principle）开闭原则
+- LSP（Liskov Substitution PrincipPrinciple）里氏替换原则
+- ISP(Interface Segregation Principle) 接口隔离原则
+- DIP（Dependency Inversion Principle）依赖导致原则
