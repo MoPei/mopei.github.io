@@ -8,6 +8,7 @@ Maven 有以下几种依赖范围：
 - runtime: 运行时依赖范围，使用该依赖范围的Maven依赖，对于测试和运行classpath有效，但是在编译主代码时无效，典型的时jdbc驱动实现，项目主代码的编译只需要jdk提供的jdbc接口，只有在执行测试或者运行项目的时候才需要实现上述接口的具体jdbc驱动
 - system: 系统依赖范围，该依赖于三种classpath的关系于provided依赖范围完全一致，但是使用system范围的依赖时必须通过systempath元素显示地指定依赖文件的路径，由于此依赖不时通过Maven仓库解析的，而且往往与本机系统绑定，可能造成构建的不可移植
 - import：导入依赖范围，该依赖范围不会对三种classpath产生实际的影响
+
 |依赖范围|对于编译classpath有效|对于测试classpath有效|对于运行classpath有效|例子|
 |----|----|----|----|----|
 |compile|Y|Y|Y|spring-core|
