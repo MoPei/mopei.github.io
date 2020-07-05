@@ -38,3 +38,46 @@ Maven的依赖调解原则是首先路径最近优先，对于相同路径，在
 ### 可选依赖
 
 如果项目A依赖B，B依赖于X和Y，但是B对X和Y的依赖是可选的，如果所有的依赖的范围都是compile的，那么X和Y就是A的compile范围传递依赖，到那会死X和Y是可选依赖，依赖将不会得以传递，也就是X和Y将不会对A有任何影响
+
+## 生命周期和插件
+
+### 生命周期想详解
+
+
+三套生命周期分别为clean、default、site，clean生命周期的目的是清理项目，default生命周期的目的是构建项目，而site生命周期的目的是建立项目站点
+
+- clean生命周期
+包含以下三个阶段：
+- pre-clean：执行一些清理前需要的工作
+- clean：清理上一次生成的文件
+- post-clean：执行一些清理后需要完成的工作
+
+- default生命周期
+
+defalut生命周期定义了真正构建时所需要执行的所有步骤，它是生命周期中最核心的部分，包含以下阶段
+
+- validate
+- initialize
+- generate-sources
+- process-sources
+- generate-resources
+- process-resources
+- compile
+- process-classes
+- generate-test-sources
+- process-test-sources
+- generate-test-resources
+- process-test-resources
+- test-compile
+- process-test-classes
+- test
+- prepare-package
+- package
+- pre-integration-test
+- integration-test
+- post-integration-test
+- verify
+- install
+- deploy
+
+
